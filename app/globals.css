@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.main-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.message-box {
+  border: 2px solid gray;
+  margin: auto;
+  height: 4rem;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 90%;
+  position: absolute;
+  bottom: 1em;
+}
+
+.message-box input[type="text"] {
+  align-items: center;
+  height: 50%;
+  width: 60%;
+  align-items: center;
+  border-radius: 1em;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  height: 50%;
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+}
+
+.message-box button {
+  width: 30%;
+  height: 100%;
+  border-radius: 0.8em;
+  background-color: rgb(103, 103, 103);
+  color: white;
+}
+
+.message-box button:active {
+  background-color: black;
+}
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: auto;
+}
+
+.main-section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.message {
+  background-color: gray;
+  border-radius: 1.5em;
+  text-align: center;
+  margin: 0.5em;
+  width: fit-content;
+  padding: 1em;
+}
